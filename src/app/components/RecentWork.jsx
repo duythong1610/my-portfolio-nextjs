@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const RecentWork = () => {
   return (
     <div className="mt-32 text-white">
@@ -8,7 +8,7 @@ const RecentWork = () => {
         <span className="text-purple-500">PROJECTS</span>
       </div>
 
-      <div className="relative h-[50%] text-white mt-40">
+      <div data-aos="fade-up" className="relative h-[50%] text-white mt-40">
         <h1 className="font-black text-[140px] md:text-[200px] absolute z-[-1] -top-32 md:-top-44">
           01
         </h1>
@@ -24,7 +24,10 @@ const RecentWork = () => {
         </div>
       </div>
 
-      <div className="relative h-auto md:h-[50%] text-white mt-40 ">
+      <div
+        data-aos="fade-up"
+        className="relative h-auto md:h-[50%] text-white mt-40 "
+      >
         <h1 className="font-black  text-[140px] md:text-[200px] absolute z-[-1] -top-32 md:-top-44">
           02
         </h1>
@@ -40,7 +43,7 @@ const RecentWork = () => {
         </div>
       </div>
 
-      <div className="relative h-[50%] text-white mt-40 ">
+      <div data-aos="fade-up" className="relative h-[50%] text-white mt-40 ">
         <h1 className="font-black  text-[140px] md:text-[200px] absolute z-[-1] -top-32 md:-top-44">
           03
         </h1>

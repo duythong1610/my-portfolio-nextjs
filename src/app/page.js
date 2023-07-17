@@ -19,8 +19,14 @@ import RecentWork from "./components/RecentWork";
 import useMenuAnimation from "../../utils/useMenuAnimation";
 import { MenuToggle } from "./components/MenuToggle";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   function ParallaxText({ children, baseVelocity = 100 }) {
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
@@ -98,10 +104,10 @@ export default function Home() {
                   initial={{ y: -200 }}
                   animate={{ y: 0 }}
                   transition={{ duration: "1" }}
-                  className="flex items-start text-white text-[40px] md:text-8xl font-bold"
+                  className="flex items-start text-white text-5xl md:text-9xl font-medium"
                 >
-                  <motion.h1 className="-tracking-wider">DUY&nbsp;</motion.h1>
-                  <motion.span className="-tracking-wider hover:text-purple-500 transition-all">
+                  <motion.h1>AU DUY&nbsp;</motion.h1>
+                  <motion.span className=" hover:text-purple-500 transition-all">
                     THONG
                   </motion.span>
                 </motion.div>
@@ -113,7 +119,7 @@ export default function Home() {
               transition={{ duration: "1" }}
               className="flex items-center h-auto overflow-visible relative whitespace-pre w-auto gap-3 md:gap-10 "
             >
-              <h1 className="text-base md:text-3xl  text-white">
+              <h1 className="text-base md:text-3xl text-white">
                 Personal portfolio
               </h1>
               <div className="h-[2px] bg-white flex-1"></div>
@@ -137,7 +143,7 @@ export default function Home() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: "1" }}
-                className="text-4xl md:text-8xl font-bold text-white "
+                className="text-5xl md:text-9xl font-medium text-white "
               >
                 WEB DEVELOPER
               </motion.h1>

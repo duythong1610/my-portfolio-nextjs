@@ -51,10 +51,10 @@ const Header = () => {
           </div>
           <div ref={scope}>
             <nav className="menu md:hidden">
-              <ul className="flex flex-col text-4xl font-black text-white gap-10 px-5">
-                <li className="-tracking-wider">HOME</li>
-                <li className="-tracking-wider">ABOUT</li>
-                <li className="-tracking-wider">
+              <ul className="flex flex-col text-5xl font-black text-white gap-10 px-5">
+                <li className="">HOME</li>
+                <li className="">ABOUT</li>
+                <li className="">
                   <Link href="/blog/hello-world ">GET IN TOUCH</Link>
                 </li>
               </ul>

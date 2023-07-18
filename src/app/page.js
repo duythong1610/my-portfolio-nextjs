@@ -9,7 +9,6 @@ import {
   useVelocity,
   useAnimationFrame,
 } from "framer-motion";
-import { wrap } from "@motionone/utils";
 import Link from "next/link";
 import { useRef } from "react";
 import Header from "./components/Header";
@@ -22,71 +21,19 @@ import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import WorkExperience from "./components/WorkExperience";
+import TechSkills from "./components/TechSkills";
+import Scrollbar from "smooth-scrollbar";
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
+    Scrollbar.initAll();
   }, []);
-  function ParallaxText({ children, baseVelocity = 100 }) {
-    const baseX = useMotionValue(0);
-    const { scrollY } = useScroll();
-    const scrollVelocity = useVelocity(scrollY);
-    const smoothVelocity = useSpring(scrollVelocity, {
-      damping: 50,
-      stiffness: 400,
-    });
-    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-      clamp: false,
-    });
-
-    /**
-     * This is a magic wrapping for the length of the text - you
-     * have to replace for wrapping that works for you or dynamically
-     * calculate
-     */
-    const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
-
-    const directionFactor = useRef(1);
-    useAnimationFrame((t, delta) => {
-      let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-
-      /**
-       * This is what changes the direction of the scroll once we
-       * switch scrolling directions.
-       */
-      if (velocityFactor.get() < 0) {
-        directionFactor.current = -1;
-      } else if (velocityFactor.get() > 0) {
-        directionFactor.current = 1;
-      }
-
-      moveBy += directionFactor.current * moveBy * velocityFactor.get();
-
-      baseX.set(baseX.get() + moveBy);
-    });
-
-    /**
-     * The number of times to repeat the child text should be dynamically calculated
-     * based on the size of the text and viewport. Likewise, the x motion value is
-     * currently wrapped between -20 and -45% - this 25% is derived from the fact
-     * we have four children (100% / 4). This would also want deriving from the
-     * dynamically generated number of children.
-     */
-    return (
-      <div className="parallax">
-        <motion.div className="scroller" style={{ x }}>
-          <span>{children} </span>
-          <span>{children} </span>
-          <span>{children} </span>
-          <span>{children} </span>
-        </motion.div>
-      </div>
-    );
-  }
 
   return (
-    <main className="max-w-[1500px] m-auto pt-10 px-4 md:px-0">
-      <div className="md:h-screen flex flex-col gap-16 md:gap-40 ">
+    <main className="max-w-[1500px] w-[90%] m-auto pt-10 md:px-0">
+      <div className="md:h-screen flex flex-col gap-16 md:gap-[10vh] lg:gap-40 ">
         <Header />
         <div className="flex justify-between">
           <div className="w-min h-min overflow-hidden flex flex-col gap-6 ">
@@ -104,7 +51,7 @@ export default function Home() {
                   initial={{ y: -200 }}
                   animate={{ y: 0 }}
                   transition={{ duration: "1" }}
-                  className="flex items-start text-white text-5xl md:text-9xl font-medium"
+                  className="flex items-start text-white text-6xl md:text-9xl font-medium"
                 >
                   <motion.h1>AU DUY&nbsp;</motion.h1>
                   <motion.span className=" hover:text-purple-500 transition-all">
@@ -135,15 +82,15 @@ export default function Home() {
           </div> */}
         </div>
 
-        <div className="flex  justify-between">
+        <div className="flex justify-between">
           <div>abc</div>
           <div className="w-min h-min overflow-hidden flex flex-col gap-6">
             <div className="h-auto overflow-visible relative  whitespace-pre w-auto">
               <motion.h1
-                initial={{ y: -100 }}
+                initial={{ y: -200 }}
                 animate={{ y: 0 }}
                 transition={{ duration: "1" }}
-                className="text-5xl md:text-9xl font-medium text-white "
+                className="text-[55px] md:text-9xl font-medium text-white "
               >
                 WEB DEVELOPER
               </motion.h1>
@@ -169,12 +116,20 @@ export default function Home() {
         </ParallaxText>
         <ParallaxText baseVelocity={10}>Scroll velocity</ParallaxText>
       </section> */}
-      <section>
-        <FavoriteQuote />
-      </section>
-      <section>
-        <RecentWork />
-      </section>
+      <div className="flex flex-col gap-20 md:gap-40">
+        <section>
+          <FavoriteQuote />
+        </section>
+        <section>
+          <WorkExperience />
+        </section>
+        <section>
+          <TechSkills />
+        </section>
+        <section>
+          <RecentWork />
+        </section>
+      </div>
     </main>
   );
 }

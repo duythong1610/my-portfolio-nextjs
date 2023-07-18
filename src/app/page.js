@@ -24,6 +24,7 @@ import { useEffect } from "react";
 import WorkExperience from "./components/WorkExperience";
 import TechSkills from "./components/TechSkills";
 import Scrollbar from "smooth-scrollbar";
+import LetWorkTogether from "./components/LetWorkTogether";
 
 export default function Home() {
   useEffect(() => {
@@ -128,6 +129,9 @@ export default function Home() {
         </section>
         <section>
           <RecentWork />
+        </section>
+        <section>
+          <LetWorkTogether />
         </section>
       </div>
     </main>

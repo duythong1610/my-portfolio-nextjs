@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import timerIcon from "@/../public/timer-svgrepo-com.svg";
 const WorkExperience = () => {
   const [dataProject, setDataProject] = useState("");
   const fetchProjectData = async () => {
@@ -21,36 +22,43 @@ const WorkExperience = () => {
         <span>EXPERIENCE</span>
       </div>
 
-      {dataProject &&
-        dataProject.map((project) => {
-          return (
-            <div
-            key={project.stt}
-              data-aos="fade-up"
-              className="relative h-[50%] text-white mt-40"
-            >
-              <h1 className="font-bold tracking-wide text-[140px] md:text-[200px] absolute z-[-1] -top-32 md:-top-44">
-                {project.stt}
-              </h1>
-              <div className="relative p-4 md:p-5 bg-black hover:bg-purple-500 rounded-3xl transition duration-1000">
-                <img
-                  src={project.mainImage.src}
-                  alt=""
-                  className="w-full h-full object-contain rounded-3xl z-10 shadow-2xl"
-                />
-                <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex items-center gap-4 ">
-                  <button className="px-4 py-2 rounded-2xl bg-black text-2xl w-fit inline-block">
-                    View Demo
-                  </button>
-
-                  <button className="px-4 py-2 rounded-2xl bg-purple-500">
-                    Details
-                  </button>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+      <div data-aos="fade-up" className="mt-20">
+        <div className="text-xl md:text-5xl flex flex-col gap-2 md:flex-row items-center justify-between">
+          <h1>
+            Intern Front-end Developer -{" "}
+            <span className="text-purple-500">TD Company</span>
+          </h1>
+          <h1>12/2022 - 02/2023</h1>
+        </div>
+        <div className="text-base md:text-2xl mt-5 tracking-wide leading-6 md:leading-9">
+          <p>
+            - Read project manuals and tested existing functions of the WPF
+            project.
+          </p>
+          <p>- Built user interface using MUI library.</p>
+          <p>- Learned and improved TypeScript skills.</p>
+          <p>
+            - Coded pages for project requirements specified by the project
+            manager, including drug category management, supplier management,
+            manufacturer management, examination kit management, and
+            prescription management.
+          </p>
+          <p>
+            - Obtained data through API provided by the back-end and rendered it
+            to the view.
+          </p>
+          <p>
+            - Coded forms to capture user input and send it to the server via
+            API provided by the back-end.
+          </p>
+          <p>- Reported work progress to Team Leader every week.</p>
+          <p>
+            - Learned how to organize source code in ReactJS and gained
+            practical experience through working on a real project in the
+            company
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

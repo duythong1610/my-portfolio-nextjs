@@ -10,7 +10,7 @@ const FavoriteQuote = () => {
         “There is no sadder sight than a young pessimist, except an old
         optimist.”
       </h1>
-      <h1 className="mt-5 md:mt-10 text-xl">- Mark Twain -</h1>
+      <h1 className="mt-5 md:mt-10 text-base md:text-xl">- Mark Twain -</h1>
     </div>
   );
 };

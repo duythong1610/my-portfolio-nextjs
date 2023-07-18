@@ -9,7 +9,7 @@ const LetWorkTogether = () => {
         data-aos="zoom-out-right"
         className="text-5xl md:text-8xl font-bold flex justify-center"
       >
-        <h1>LET'S WORK&nbsp;</h1>
+        <h1>LET&apos;S WORK&nbsp;</h1>
         <span className="text-purple-500">TOGETHER</span>
       </div>
 

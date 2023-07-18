@@ -27,6 +27,7 @@ const RecentWork = () => {
         dataProject.map((project) => {
           return (
             <div
+              key={project.stt}
               data-aos="fade-up"
               className="relative h-[50%] text-white mt-40"
             >

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const RecentWork = () => {
   const [dataProject, setDataProject] = useState("");
@@ -36,9 +37,11 @@ const RecentWork = () => {
                   {project.stt}
                 </h1>
                 <div className="relative p-4 md:p-5 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.2)_50%,transparent_75%,transparent_100%)] bg-zinc-950   border border-slate-900 bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-2xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[1500ms] rounded-3xl duration-1000 overflow-hidden z-[999]">
-                  <img
+                  <Image
+                    width={1920}
+                    height={1080}
                     src={project.mainImage}
-                    alt=""
+                    alt="project img"
                     className="w-full h-full object-contain rounded-3xl shadow-2xl z-20"
                   />
                   <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex items-center gap-4 ">

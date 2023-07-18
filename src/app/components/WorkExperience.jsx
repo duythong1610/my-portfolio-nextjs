@@ -25,6 +25,7 @@ const WorkExperience = () => {
         dataProject.map((project) => {
           return (
             <div
+            key={project.stt}
               data-aos="fade-up"
               className="relative h-[50%] text-white mt-40"
             >
@@ -33,7 +34,7 @@ const WorkExperience = () => {
               </h1>
               <div className="relative p-4 md:p-5 bg-black hover:bg-purple-500 rounded-3xl transition duration-1000">
                 <img
-                  src={project.mainImage}
+                  src={project.mainImage.src}
                   alt=""
                   className="w-full h-full object-contain rounded-3xl z-10 shadow-2xl"
                 />

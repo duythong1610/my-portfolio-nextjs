@@ -8,6 +8,10 @@
   display: none;
 }
 
+::selection {
+  background: #a855f7;
+}
+
 html {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
@@ -50,7 +54,6 @@ body {
   display: flex;
   flex-wrap: nowrap;
 }
-
 
 .parallax span {
   display: block;

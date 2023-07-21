@@ -23,10 +23,20 @@ const Header = () => {
 
           <ul className="md:flex gap-10 text-white font-medium text-lg hidden">
             <li>
-              <Link href="/">HOME</Link>
+              <Link href="#main">MAIN</Link>
             </li>
             <li>
-              <Link href="/about">ABOUT</Link>
+              <Link href="#about">ABOUT</Link>
+            </li>
+            <li>
+              <Link href="#work">WORK</Link>
+            </li>
+            <li>
+              <Link href="#techskills">TECH SKILLS</Link>
+            </li>
+
+            <li>
+              <Link href="#project">PROJECTS</Link>
             </li>
             <li>
               <Link
@@ -51,11 +61,31 @@ const Header = () => {
           </div>
           <div ref={scope}>
             <nav className="menu md:hidden">
-              <ul className="flex flex-col text-5xl font-black text-white gap-10 px-5">
-                <li className="">HOME</li>
-                <li className="">ABOUT</li>
-                <li className="">
-                  <Link href="/blog/hello-world ">GET IN TOUCH</Link>
+              <ul className="flex flex-col text-5xl font-black text-center text-white gap-10 px-5">
+                <li className="" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="#main">MAIN</Link>
+                </li>
+                <li className="" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="#about" legacyBehavior>
+                    ABOUT
+                  </Link>
+                </li>
+                <li className="" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="#techskills" legacyBehavior>
+                    TECH SKILLS
+                  </Link>
+                </li>
+                <li className="" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="#project" legacyBehavior>
+                    PROJECTS
+                  </Link>
+                </li>
+                <li className="mt-5" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="#getintouch" legacyBehavior>
+                    <a className="px-10 py-1 rounded-3xl bg-purple-500">
+                      GET IN TOUCH
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

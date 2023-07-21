@@ -59,6 +59,11 @@ const RecentWork = () => {
                     </button>
                   </div>
                 </div>
+                <div className="flex items-center gap-4 mt-10">
+                  <div>alo</div>
+                  <div>alo</div>
+                  <div>alo</div>
+                </div>
               </div>
             );
           })}

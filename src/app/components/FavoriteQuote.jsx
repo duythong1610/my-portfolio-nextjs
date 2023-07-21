@@ -7,10 +7,10 @@ const FavoriteQuote = () => {
         MY FAVORITE QUOTES
       </h1>
       <h1 className="text-xl md:text-5xl font-medium">
-        “There is no sadder sight than a young pessimist, except an old
-        optimist.”
+        “Choose a job you love, and you will never have to work a day in your
+        life.”
       </h1>
-      <h1 className="mt-5 md:mt-10 text-base md:text-xl">- Mark Twain -</h1>
+      <h1 className="mt-5 md:mt-10 text-base md:text-xl">- Confucius -</h1>
     </div>
   );
 };

@@ -88,7 +88,74 @@ const TechSkills = () => {
         <span className="text-purple-500">SKILLS</span>
       </div>
 
-      <div className="flex items-center gap-14 mt-20 flex-wrap justify-center">
+      <div
+        data-aos="fade-up"
+        className="flex items-center gap-5 md:gap-14 mt-20 flex-wrap justify-center"
+      >
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={htmlIcon.src}
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">HTML5</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={cssIcon.src}
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">CSS3</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={jsIcon.src}
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">Javascript</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={reactIcon.src}
+            alt="alo"
+            className="hover:animate-spin w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">ReactJS</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">Ant Design</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={reduxIcon.src}
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">Redux</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={tailwindIcon.src}
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">Tailwind CSS</h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <img
+            src={vscodeIcon.src}
+            alt="alo"
+            className="w-14 h-14 md:w-36 md:h-36"
+          />
+          <h1 className="text-base md:text-2xl">Visual Studio Code</h1>
+        </div>
         <div className="flex flex-col items-center gap-2">
           <img
             src={mongoIcon.src}
@@ -97,74 +164,10 @@ const TechSkills = () => {
             height={150}
             className="w-14 h-14 md:w-36 md:h-36"
           />
-          <h1 className="text-3xl">Mongo</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={htmlIcon.src}
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">HTML5</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={cssIcon.src}
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">CSS3</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={jsIcon.src}
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">Javascript</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={reactIcon.src}
-            alt="alo"
-            className="hover:animate-spin w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">ReactJS</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">Ant Design</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={reduxIcon.src}
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">Redux</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={tailwindIcon.src}
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">Tailwind CSS</h1>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <img
-            src={vscodeIcon.src}
-            alt="alo"
-            className="w-14 h-14 md:w-36 md:h-36"
-          />
-          <h1 className="text-3xl">Visual Studio Code</h1>
+          <h1 className="text-base md:text-2xl">Mongo</h1>
         </div>
       </div>
-      {/* <section className="md:text-3xl font-medium text-white">
+      {/* <section className="md:text-base md:text-2xl font-medium text-white">
         <ParallaxText baseVelocity={-10} className>
           <div className="flex items-center gap-2">
             <h1>mongodb</h1>

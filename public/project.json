@@ -1,6 +1,7 @@
 [
   {
     "stt": "01",
+    "nameProject": "October16 Store",
     "demoUrl": "https://www.october16th.store/",
     "mainImage": "https://storage.googleapis.com/my-image-products/project1.jpg",
     "detailsImage": [
@@ -11,6 +12,7 @@
   },
   {
     "stt": "02",
+    "nameProject": "Chill October16th",
     "demoUrl": "https://chill.october16th.store/",
     "mainImage": "https://storage.googleapis.com/my-image-products/project2.png",
     "detailsImage": [
@@ -21,6 +23,8 @@
   },
   {
     "stt": "03",
+    "nameProject": "Yiitall Movie",
+    "techList": [""],
     "demoUrl": "https://yiitall-movie.netlify.app/",
     "mainImage": "https://storage.googleapis.com/my-image-products/project3.png",
     "detailsImage": [

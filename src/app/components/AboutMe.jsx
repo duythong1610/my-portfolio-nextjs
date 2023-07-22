@@ -18,6 +18,7 @@ import jsIcon from "@/../public/icons8-javascript.svg";
 import tailwindIcon from "@/../public/icons8-tailwindcss.svg";
 import reduxIcon from "@/../public/icons8-redux.svg";
 import vscodeIcon from "@/../public/icons8-visual-studio-code-2019.svg";
+import Image from "next/image";
 
 const AboutMe = () => {
   return (
@@ -31,10 +32,12 @@ const AboutMe = () => {
       </div> */}
       <div className="flex flex-col items-center md:flex-row gap-20 mt-10">
         <div data-aos="fade-up" className="md:w-1/2">
-          <img
+          <Image
             src="https://storage.googleapis.com/my-image-products/avatar.png"
             alt=""
             className="rounded-2xl w-full mix-blend-darken "
+            width={626}
+            height={626}
           />
         </div>
 

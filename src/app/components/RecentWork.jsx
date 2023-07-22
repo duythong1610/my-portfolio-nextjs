@@ -66,8 +66,11 @@ const RecentWork = () => {
                     </h1>
                   </div>
                   <div className="flex flex-wrap items-center gap-2 md:w-[50%]">
-                    {project.techList?.map((tech) => (
-                      <span className="text-sm md:text-lg bg-[#0d0d0d] px-4 py-1 rounded-2xl hover:bg-purple-500 duration-700">
+                    {project.techList?.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="text-sm md:text-lg bg-[#0d0d0d] px-4 py-1 rounded-2xl hover:bg-purple-500 duration-700"
+                      >
                         {tech}
                       </span>
                     ))}

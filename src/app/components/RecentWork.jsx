@@ -59,10 +59,22 @@ const RecentWork = () => {
                     </button>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 mt-10">
-                  <div>alo</div>
-                  <div>alo</div>
-                  <div>alo</div>
+                <div className="flex flex-col md:flex-row items-center mt-5 md:mt-10 gap-5 md:gap-10">
+                  <div className="flex items-center gap-4 md:w-[30%]">
+                    <h1 className="text-4xl md:text-5xl uppercase font-bold">
+                      {project.name}
+                    </h1>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 md:w-[50%]">
+                    {project.techList?.map((tech) => (
+                      <span className="text-sm md:text-lg bg-[#0d0d0d] px-4 py-1 rounded-2xl hover:bg-purple-500 duration-700">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 md:w-[20%] ">
+                    Example
+                  </div>
                 </div>
               </div>
             );

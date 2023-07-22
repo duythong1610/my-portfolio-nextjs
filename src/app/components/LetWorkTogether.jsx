@@ -19,14 +19,6 @@ const LetWorkTogether = () => {
           <a className="text-purple-500">auduythong1610@gmail.com</a>
         </Link>
       </div>
-      <div>
-        <a
-          href="../CV-AuDuyThong-Fresher-Frontend_ENG.pdf"
-          download="CV-AuDuyThong-Fresher-Frontend_ENG.pdf"
-        >
-          Dowload
-        </a>
-      </div>
     </div>
   );
 };

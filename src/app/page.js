@@ -25,6 +25,7 @@ import WorkExperience from "./components/WorkExperience";
 import TechSkills from "./components/TechSkills";
 import Scrollbar from "smooth-scrollbar";
 import LetWorkTogether from "./components/LetWorkTogether";
+import AboutMe from "./components/AboutMe";
 
 export default function Home() {
   useEffect(() => {
@@ -130,6 +131,9 @@ export default function Home() {
       <div className="flex flex-col gap-20 md:gap-40">
         <section id="">
           <FavoriteQuote />
+        </section>
+        <section id="about">
+          <AboutMe />
         </section>
         <section id="work">
           <WorkExperience />

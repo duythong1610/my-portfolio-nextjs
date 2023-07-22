@@ -34,8 +34,12 @@ const WorkExperience = () => {
         </div>
         <div className="bg-purple-500 w-full m-auto h-[3px] mt-5 mb-10" />
         <div className="flex items-center gap-3 justify-center my-5">
-          <h1 className="text-xl md:text-5xl">What did i do here</h1>
-          <img src={thinkingIcon.src} alt="" className="w-10 h-10 md:w-14 md:h-14" />?
+          <h1 className="text-xl md:text-5xl">What did i do here?</h1>
+          <img
+            src={thinkingIcon.src}
+            alt=""
+            className="w-10 h-10 md:w-14 md:h-14"
+          />
         </div>
         <div className="text-sm md:text-xl mt-5 tracking-wide leading-6 md:leading-9">
           <p>

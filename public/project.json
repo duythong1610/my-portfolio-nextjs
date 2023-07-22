@@ -1,7 +1,18 @@
 [
   {
     "stt": "01",
-    "nameProject": "October16 Store",
+    "name": "October16th Store",
+    "techList": [
+      "ReactJS + Vite",
+      "Ant Design",
+      "Tailwind CSS",
+      "Styled Components",
+      "Redux Toolkit",
+      "Express.js",
+      "JSON Web Token",
+      "MongoDB",
+      "Nodemailler"
+    ],
     "demoUrl": "https://www.october16th.store/",
     "mainImage": "https://storage.googleapis.com/my-image-products/project1.jpg",
     "detailsImage": [
@@ -12,7 +23,18 @@
   },
   {
     "stt": "02",
-    "nameProject": "Chill October16th",
+    "name": "Chill October16th",
+    "techList": [
+      "ReactJS + Vite",
+      "Ant Design",
+      "React Hook Form",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Express.js",
+      "JSON Web Token",
+      "MongoDB",
+      "Nodemailler"
+    ],
     "demoUrl": "https://chill.october16th.store/",
     "mainImage": "https://storage.googleapis.com/my-image-products/project2.png",
     "detailsImage": [
@@ -23,8 +45,8 @@
   },
   {
     "stt": "03",
-    "nameProject": "Yiitall Movie",
-    "techList": [""],
+    "name": "Yiitall Movie",
+    "techList": ["ReactJS + Vite", "Tailwind CSS", "SASS", "Redux Toolkit"],
     "demoUrl": "https://yiitall-movie.netlify.app/",
     "mainImage": "https://storage.googleapis.com/my-image-products/project3.png",
     "detailsImage": [

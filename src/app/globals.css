@@ -94,10 +94,10 @@ input {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background: rgb(13, 13, 13);
   border-bottom: 3px solid var(--purple);
-  padding-top: 100px;
+  padding-top: 70px;
   transform: translateX(-100%);
   will-change: transform;
 }

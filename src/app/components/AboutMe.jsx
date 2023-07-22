@@ -52,8 +52,8 @@ const AboutMe = () => {
             <div className="w-full h-[5px] bg-purple-500"></div>
           </div>
           <h1>
-            I'm <span className="text-purple-500">Au Duy Thong</span>, a web
-            developer with limited experience. I have a strong passion for
+            I&apos;m <span className="text-purple-500">Au Duy Thong</span>, a
+            web developer with limited experience. I have a strong passion for
             creating products that prioritize user interface and experience. I
             can spend entire days sitting in front of my computer, trying to
             solve any challenges that I feel are not yet satisfactory.

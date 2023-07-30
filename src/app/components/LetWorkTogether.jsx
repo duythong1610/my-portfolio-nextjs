@@ -14,10 +14,13 @@ const LetWorkTogether = () => {
         <span className="text-purple-500">TOGETHER</span>
       </div>
 
-      <div data-aos="fade-up" className="">
-        <Link href="abc.com" legacyBehavior>
-          <a className="text-purple-500">auduythong1610@gmail.com</a>
+      <div data-aos="fade-up" className="text-center mt-10 flex flex-col gap-3">
+        <Link href="auduythong1610@gmail.com" legacyBehavior>
+          <a className="text-purple-500 text-base md:text-2xl">
+            auduythong1610@gmail.com
+          </a>
         </Link>
+        <h1 className="text-white text-base md:text-2xl">+84 398.052.707</h1>
       </div>
     </div>
   );

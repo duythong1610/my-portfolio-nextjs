@@ -77,6 +77,7 @@ export default function Home() {
                 <h1 className="text-base md:text-3xl  text-white">2023</h1>
               </motion.div>
             </div>
+
             {/* <div className="mr-[15%]">
             <img
               src={avatar.src}
@@ -114,9 +115,8 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <div id="section10">
-            <h1>Scroll Down Button #10</h1>
-            <a href="#work">
+          <div data-aos="fade-up" id="section10">
+            <a href="#about">
               <span></span>Scroll
             </a>
           </div>
@@ -146,6 +146,17 @@ export default function Home() {
         </section>
         <section id="getintouch">
           <LetWorkTogether />
+        </section>
+        <section className="md:w-1/2 m-auto">
+          <iframe
+            src="https://open.spotify.com/embed/track/1ExfPZEiahqhLyajhybFeS?utm_source=generator&theme=0"
+            width="100%"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            className="h-52 rounded-2xl !bg-transparent"
+          ></iframe>
         </section>
       </div>
     </main>

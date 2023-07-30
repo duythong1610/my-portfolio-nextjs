@@ -18,7 +18,13 @@ const Header = () => {
           className="md:flex justify-between h-full items-center hidden"
         >
           <div className="text-white font-medium text-lg">
-            <Link href="/">LOGO</Link>
+            <Link href="/">
+              <img
+                src="https://storage.googleapis.com/my-image-products/icon_portfolio.png"
+                alt=""
+                className="w-[100px] h-[100px]"
+              />
+            </Link>
           </div>
 
           <ul className="md:flex gap-10 text-white font-medium text-lg hidden">
@@ -43,7 +49,7 @@ const Header = () => {
                 href="/blog/hello-world "
                 className="py-2 px-5 bg-purple-600 rounded-3xl"
               >
-                GET IN TOUCH
+                SAY HELLO
               </Link>
             </li>
           </ul>
@@ -57,7 +63,14 @@ const Header = () => {
           className="flex justify-between h-full items-center"
         >
           <div className="text-white font-medium text-lg">
-            <Link href="/">LOGO</Link>
+            <Link href="/">
+              {" "}
+              <img
+                src="https://storage.googleapis.com/my-image-products/icon_portfolio.png"
+                alt=""
+                className="w-[50px] h-[50px]"
+              />
+            </Link>
           </div>
           <div ref={scope}>
             <nav className="menu md:hidden">
@@ -83,7 +96,7 @@ const Header = () => {
                 <li className="mt-5" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="#getintouch" legacyBehavior>
                     <a className="px-10 py-1 rounded-3xl bg-purple-500">
-                      GET IN TOUCH
+                      SAY HELLO
                     </a>
                   </Link>
                 </li>

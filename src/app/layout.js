@@ -10,8 +10,7 @@ export const metadata = {
   },
   description: "Portfolio - Âu Duy Thông 2023",
   verification: {
-    google:
-      "google-site-verification=ewCT8qjNOWqgeae2vR0_7yhi0YnXKW_D5QTgTbycMIY",
+    google: "ewCT8qjNOWqgeae2vR0_7yhi0YnXKW_D5QTgTbycMIY",
   },
 };
 

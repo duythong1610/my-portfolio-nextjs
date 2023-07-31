@@ -18,6 +18,7 @@ export const metadata = {
   type: "website",
   title: "Portfolio - Âu Duy Thông",
   description: "Portfolio Âu Duy Thông 2023",
+  googleSiteVerification: "ewCT8qjNOWqgeae2vR0_7yhi0YnXKW_D5QTgTbycMIY",
 };
 
 export default function RootLayout({ children }) {

@@ -7,18 +7,9 @@ export const metadata = {
   icons: {
     icon: "https://storage.googleapis.com/my-image-products/icon_portfolio.png",
   },
-  images: [
-    {
-      url: "https://nextjs.org/og.png",
-      width: 800,
-      height: 600,
-    },
-  ],
   locale: "vi",
   type: "website",
-  title: "Portfolio - Âu Duy Thông",
   description: "Portfolio Âu Duy Thông 2023",
-  googleSiteVerification: "ewCT8qjNOWqgeae2vR0_7yhi0YnXKW_D5QTgTbycMIY",
 };
 
 export default function RootLayout({ children }) {

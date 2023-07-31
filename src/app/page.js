@@ -26,7 +26,6 @@ import TechSkills from "./components/TechSkills";
 import Scrollbar from "smooth-scrollbar";
 import LetWorkTogether from "./components/LetWorkTogether";
 import AboutMe from "./components/AboutMe";
-import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {
@@ -36,29 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Portfolio - Âu Duy Thông</title>
-        <meta
-          name="description"
-          content="Portfolio - Âu Duy Thông"
-          key="desc"
-        />
-        <meta property="og:title" content="Portfolio - Âu Duy Thông" />
-        <meta
-          property="og:description"
-          content="Portfolio - Âu Duy Thông 2023"
-        />
-        <meta
-          property="og:image"
-          content="https://storage.googleapis.com/my-image-products/icon_portfolio.png"
-        />
-        <meta
-          name="google-site-verification"
-          content="ewCT8qjNOWqgeae2vR0_7yhi0YnXKW_D5QTgTbycMIY"
-        />
-      </Head>
       <main className="max-w-[1500px] w-[90%] m-auto pt-10 md:px-0">
-        |
         <section id="main">
           <div className="md:h-screen max-h-[1000px] flex flex-col gap-16 md:gap-[10vh] lg:gap-40 ">
             <Header />

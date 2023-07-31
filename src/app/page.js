@@ -26,6 +26,7 @@ import TechSkills from "./components/TechSkills";
 import Scrollbar from "smooth-scrollbar";
 import LetWorkTogether from "./components/LetWorkTogether";
 import AboutMe from "./components/AboutMe";
+import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {

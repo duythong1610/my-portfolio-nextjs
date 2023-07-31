@@ -4,6 +4,7 @@ import "./globals.css";
 import { Anton } from "next/font/google";
 const anton = Anton({ subsets: ["latin"], weight: "400" });
 export const metadata = {
+  icons: "https://storage.googleapis.com/my-image-products/icon_portfolio.png",
   title: {
     default: "Portfolio - Âu Duy Thông",
     template: `%s | Portfolio - Âu Duy Thông`,

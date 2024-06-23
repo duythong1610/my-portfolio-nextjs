@@ -70,10 +70,12 @@ const Header = () => {
           <div className="text-white font-medium text-lg">
             <Link href="/">
               {" "}
-              <img
-                src="https://storage.googleapis.com/my-image-products/icon_portfolio.png"
+              <Image
+                src={logo}
                 alt=""
-                className="w-[50px] h-[50px]"
+                width={100}
+                height={100}
+                className="w-[50px] h-[50px] object-contain"
               />
             </Link>
           </div>

@@ -1,23 +1,4 @@
-import React, { useEffect, useState } from "react";
-import {
-  motion,
-  useAnimationFrame,
-  useMotionValue,
-  useScroll,
-  useSpring,
-  useTransform,
-  useVelocity,
-} from "framer-motion";
-import { wrap } from "@motionone/utils";
-import { useRef } from "react";
-import mongoIcon from "@/../public/mongodb-svgrepo-com.svg";
-import htmlIcon from "@/../public/icons8-html.svg";
-import reactIcon from "@/../public/icons8-react-native.svg";
-import cssIcon from "@/../public/icons8-css.svg";
-import jsIcon from "@/../public/icons8-javascript.svg";
-import tailwindIcon from "@/../public/icons8-tailwindcss.svg";
-import reduxIcon from "@/../public/icons8-redux.svg";
-import vscodeIcon from "@/../public/icons8-visual-studio-code-2019.svg";
+import avatar from "../../../public/assets/images/avatar.jpg";
 import Image from "next/image";
 
 const AboutMe = () => {
@@ -31,19 +12,19 @@ const AboutMe = () => {
         <span className="text-purple-500">ME</span>
       </div> */}
       <div className="flex flex-col items-center md:flex-row gap-20 mt-10">
-        <div data-aos="fade-up" className="md:w-1/2">
+        <div data-aos="fade-up" className="md:w-[300px]">
           <Image
-            src="https://storage.googleapis.com/my-image-products/avatar.png"
+            src={avatar}
             alt=""
-            className="rounded-2xl w-full mix-blend-darken "
-            width={626}
-            height={626}
+            className="rounded-2xl w-[300px] mix-blend-darken "
+            width={300}
+            height={300}
           />
         </div>
 
         <div
           data-aos="zoom-out-right"
-          className="text-white md:w-1/2 text-base md:text-xl tracking-wide leading-6 md:leading-9 flex flex-col gap-5 "
+          className="text-white md:flex-1 text-base md:text-xl tracking-wide leading-6 md:leading-9 flex flex-col gap-5 "
         >
           <div className="w-fit">
             <h1 className="text-5xl md:text-9xl tracking-wide font-bold">
@@ -53,17 +34,15 @@ const AboutMe = () => {
           </div>
           <h1>
             I&apos;m <span className="text-purple-500">Au Duy Thong</span>, a
-            web developer with limited experience. I have a strong passion for
-            creating products that prioritize user interface and experience. I
-            can spend entire days sitting in front of my computer, trying to
-            solve any challenges that I feel are not yet satisfactory.
+            passionate and creative Front End Developer with over 1 year of
+            experience in building and developing user interfaces for websites
+            and web applications. I am always seeking new challenges and
+            constantly learning to improve my skills.
           </h1>
           <h1>
-            Thank you for taking the time to review my portfolio. Currently, I
-            am seeking a job related to web development (ReactJS). Below are
-            some of my modest experiences and projects that I have worked on.
-            Please take a look, and I hope there might be an opportunity for us
-            to work together.
+            Thank you for visiting my portfolio! I look forward to the
+            opportunity to work and learn from you. Thank you for reviewing my
+            portfolio, and I hope to collaborate in the future.
           </h1>
           {/* <div>
             <h1 className="text-2xl font-bold">For contact</h1>
@@ -72,7 +51,7 @@ const AboutMe = () => {
             <span>alo</span>
             <span>alo</span>
           </div> */}
-          <div>
+          {/* <div>
             <a
               href="../CV-AuDuyThong-Fresher-Frontend_ENG.pdf"
               download="CV-AuDuyThong-Fresher-Frontend_ENG.pdf"
@@ -80,7 +59,7 @@ const AboutMe = () => {
             >
               Download CV
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

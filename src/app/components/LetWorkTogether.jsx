@@ -15,12 +15,14 @@ const LetWorkTogether = () => {
       </div>
 
       <div data-aos="fade-up" className="text-center mt-10 flex flex-col gap-3">
-        <Link href="auduythong1610@gmail.com" legacyBehavior>
+        <Link href="mailto:auduythong1610@gmail.com" legacyBehavior>
           <a className="text-purple-500 text-base md:text-2xl">
             auduythong1610@gmail.com
           </a>
         </Link>
-        <h1 className="text-white text-base md:text-2xl">+84 398.052.707</h1>
+        <Link href="tel:0398052707" className="" legacyBehavior>
+          <a className="text-white text-base md:text-2xl">+84 398.052.707</a>
+        </Link>
       </div>
     </div>
   );

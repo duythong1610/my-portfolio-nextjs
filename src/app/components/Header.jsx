@@ -2,11 +2,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { MenuToggle } from "./MenuToggle";
 import { useState } from "react";
+import logo from "../../../public/assets/images/logo.png";
 import useMenuAnimation from "../../../utils/useMenuAnimation";
+import Image from "next/image";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scope = useMenuAnimation(isOpen);
+
   return (
     <div>
       {" "}
@@ -19,10 +22,12 @@ const Header = () => {
         >
           <div className="text-white font-medium text-lg">
             <Link href="/">
-              <img
-                src="https://storage.googleapis.com/my-image-products/icon_portfolio.png"
+              <Image
+                src={logo}
                 alt=""
-                className="w-[100px] h-[100px]"
+                width={100}
+                height={100}
+                className="w-[80px] h-[80px] object-contain"
               />
             </Link>
           </div>

@@ -1,32 +1,18 @@
 "use client";
-import Image from "next/image";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  useMotionValue,
-  useVelocity,
-  useAnimationFrame,
-} from "framer-motion";
-import Link from "next/link";
-import { useRef } from "react";
-import Header from "./components/Header";
-import avatar from "../../public/avatar.jpg";
-import FavoriteQuote from "./components/FavoriteQuote";
-import RecentWork from "./components/RecentWork";
-import useMenuAnimation from "../../utils/useMenuAnimation";
-import { MenuToggle } from "./components/MenuToggle";
-import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  motion
+} from "framer-motion";
 import { useEffect } from "react";
-import WorkExperience from "./components/WorkExperience";
-import TechSkills from "./components/TechSkills";
 import Scrollbar from "smooth-scrollbar";
-import LetWorkTogether from "./components/LetWorkTogether";
 import AboutMe from "./components/AboutMe";
-import Head from "next/head";
+import FavoriteQuote from "./components/FavoriteQuote";
+import Header from "./components/Header";
+import LetWorkTogether from "./components/LetWorkTogether";
+import RecentWork from "./components/RecentWork";
+import TechSkills from "./components/TechSkills";
+import WorkExperience from "./components/WorkExperience";
 
 export default function Home() {
   useEffect(() => {
@@ -152,7 +138,7 @@ export default function Home() {
           </section>
           <section className="md:w-1/2 m-auto">
             <iframe
-              src="https://open.spotify.com/embed/track/1ExfPZEiahqhLyajhybFeS?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/track/7221xIgOnuakPdLqT0F3nP?utm_source=generator"
               width="100%"
               frameBorder="0"
               allowfullscreen=""

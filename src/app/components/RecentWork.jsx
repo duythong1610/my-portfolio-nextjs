@@ -8,6 +8,8 @@ const RecentWork = () => {
   const fetchProjectData = async () => {
     const res = await fetch("./project.json");
     const jsonData = await res.json();
+
+    console.log(jsonData);
     setDataProject(jsonData);
   };
 
@@ -54,9 +56,9 @@ const RecentWork = () => {
                       </a>
                     </Link>
 
-                    <button className="px-4 py-2 rounded-2xl bg-purple-500">
+                    {/* <button className="px-4 py-2 rounded-2xl bg-purple-500">
                       Details
-                    </button>
+                    </button> */}
                   </div>
                 </div>
                 <div className="flex flex-col md:flex-row items-center mt-5 md:mt-10 gap-5 md:gap-10">

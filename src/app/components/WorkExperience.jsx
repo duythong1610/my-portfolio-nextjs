@@ -70,6 +70,52 @@ const WorkExperience = () => {
           </p>
         </div>
       </div>
+      <div data-aos="fade-up" className="mt-20 bg-[#0d0d0d] p-5 rounded-xl">
+        <div className="text-lg md:text-5xl flex flex-col gap-2 md:flex-row items-center justify-between">
+          <h1>
+            Front-end Developer -{" "}
+            <span className="text-purple-500">BMD Solutions</span>
+          </h1>
+          <h1>07/2023 - Present</h1>
+        </div>
+        <div className="bg-purple-500 w-full m-auto h-[3px] mt-5 mb-10" />
+        <div className="flex items-center gap-3 justify-center my-5">
+          <h1 className="text-xl md:text-5xl">What did i do here?</h1>
+          <img
+            src={thinkingIcon.src}
+            alt=""
+            className="w-10 h-10 md:w-14 md:h-14"
+          />
+        </div>
+        <div className="text-sm md:text-xl mt-5 tracking-wide leading-6 md:leading-9">
+          <p>
+            For the past year, I have been working at an outsourcing company
+            where I have gained extensive experience in developing various types
+            of web applications. My role involved working on a range of
+            projects, including:
+          </p>
+          <p>
+            - Management Systems: Developed user-friendly and efficient
+            web-based management systems for different industries, enhancing
+            business operations and productivity.
+          </p>
+          <p>
+            - Booking Platforms: Created interactive and reliable booking
+            systems for various services, ensuring seamless user experiences and
+            efficient booking processes..
+          </p>
+          <p>
+            - Travel Websites: Built visually appealing and easy-to-navigate
+            travel websites, helping users to explore and book travel packages
+            effortlessly.
+          </p>
+          <p>
+            - E-learning Platforms: Developed engaging and responsive e-learning
+            websites for selling courses, facilitating smooth and interactive
+            online learning experiences.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

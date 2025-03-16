@@ -76,7 +76,7 @@ const WorkExperience = () => {
             Front-end Developer -{" "}
             <span className="text-purple-500">BMD Solutions</span>
           </h1>
-          <h1>07/2023 - Present</h1>
+          <h1>07/2023 - 03/2025</h1>
         </div>
         <div className="bg-purple-500 w-full m-auto h-[3px] mt-5 mb-10" />
         <div className="flex items-center gap-3 justify-center my-5">

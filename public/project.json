@@ -13,7 +13,7 @@
       "MongoDB",
       "Nodemailler"
     ],
-    "demoUrl": "https://www.october16th.store/",
+    "demoUrl": "https://october16th-store.vercel.app",
     "mainImage": "/assets/images/project1.webp",
     "detailsImage": [
       {
@@ -35,7 +35,7 @@
       "MongoDB",
       "Nodemailler"
     ],
-    "demoUrl": "https://chill.october16th.store/",
+    "demoUrl": "https://lofi-october16th.vercel.app",
     "mainImage": "/assets/images/project2.webp",
     "detailsImage": [
       {

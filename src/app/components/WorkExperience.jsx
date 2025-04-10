@@ -89,31 +89,30 @@ const WorkExperience = () => {
         </div>
         <div className="text-sm md:text-xl mt-5 tracking-wide leading-6 md:leading-9">
           <p>
-            For the past year, I have been working at an outsourcing company
-            where I have gained extensive experience in developing various types
-            of web applications. My role involved working on a range of
-            projects, including:
+            - 1.5 years of experience working on various outsourcing projects,
+            including sales management, online course management, spa booking,
+            delivery management, and QR code scanning for point accumulation and
+            rewards
           </p>
           <p>
-            - Management Systems: Developed user-friendly and efficient
-            web-based management systems for different industries, enhancing
-            business operations and productivity.
+            - Understanding the company&apos;s workflow, mentoring, and
+            supporting interns and new employees, helping them adapt to the
+            company&apos;s coding style and development processes to ensure
+            consistency and efficiency in project execution.
           </p>
           <p>
-            - Booking Platforms: Created interactive and reliable booking
-            systems for various services, ensuring seamless user experiences and
-            efficient booking processes..
+            - Writing user guides and documentation for clients, receiving
+            feedback, and making necessary adjustments to enhance user
+            experience and meet customer requirements.
           </p>
           <p>
-            - Travel Websites: Built visually appealing and easy-to-navigate
-            travel websites, helping users to explore and book travel packages
-            effortlessly.
+            - Participating in analyzing and proposing solutions for new feature
+            development based on customer requirements while ensuring no
+            conflicts with existing functionalities
           </p>
-          <p>
-            - E-learning Platforms: Developed engaging and responsive e-learning
-            websites for selling courses, facilitating smooth and interactive
-            online learning experiences.
-          </p>
+          <p>- Collaborating with the Backend team to optimize the product.</p>
+          <p>- Sharing knowledge through company presentations.</p>
+          <p>- Applying AI to the coding process to enhance work efficiency.</p>
         </div>
       </div>
     </div>
